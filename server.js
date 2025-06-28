@@ -45,6 +45,10 @@ async function getToken() {
     }
 }
 
+app.get('/', (req, res) => {
+    res.send('Hello, Express.js is running!');
+});
+
 app.get('/api/icd11search', async (req, res) => {
     try {
         const token = await getToken();
