@@ -46,6 +46,7 @@ async function getToken() {
 }
 
 app.get('/', (req, res) => {
+    console.log('hi there')
     res.send('Hello, Express.js is running!');
 });
 
